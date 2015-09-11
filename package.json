@@ -1,15 +1,15 @@
 {
   "name": "local-node-lambda",
   "version": "0.0.1",
-  "description": "The modern build of lodash modular utilities.",
+  "description": "Local-Node-Lambda lets you run Amazon Lambda functions locally. You can run them from the command line or integrate calls within a regular Node.js script, e.g. to use in unit testing or simply as part of a regular application.",
   "license": "MIT",
   "main": "index.js",
   "keywords": [
     "lambda"
   ],
   "author": {
-    "name": "DeepRapid.com",
-    "email": "tobias@deeprapid.com",
+    "name": "Tobias Christensen",
+    "email": "tobiaschristensen@gmail.com",
     "url": "http://deeprapid.com/"
   },
   "dependencies": {
@@ -19,16 +19,16 @@
   "contributors": [
     {
       "name": "Tobias Christensen",
-      "email": "tobias@deeprapid.com",
+      "email": "tobiaschristensen@gmail.com",
       "url": "http://deeprapid.com/"
     }
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/deeprapid/local-node-lambda.git"
+    "url": "git+https://github.com/tobiasc/local-node-lambda.git"
   },
   "bugs": {
-    "url": "https://github.com/deeprapid/local-node-lambda/issues"
+    "url": "https://github.com/tobiasc/local-node-lambda/issues"
   },
   "bin": {
     "local-node-lambda": "./bin/local-node-lambda"
