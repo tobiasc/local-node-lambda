@@ -1,0 +1,36 @@
+{
+  "name": "local-node-lambda",
+  "version": "0.0.1",
+  "description": "The modern build of lodash modular utilities.",
+  "license": "MIT",
+  "main": "index.js",
+  "keywords": [
+    "lambda"
+  ],
+  "author": {
+    "name": "DeepRapid.com",
+    "email": "tobias@deeprapid.com",
+    "url": "http://deeprapid.com/"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1.6",
+    "commander": "^2.6.0"
+  },
+  "contributors": [
+    {
+      "name": "Tobias Christensen",
+      "email": "tobias@deeprapid.com",
+      "url": "http://deeprapid.com/"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deeprapid/local-node-lambda.git"
+  },
+  "bugs": {
+    "url": "https://github.com/deeprapid/local-node-lambda/issues"
+  },
+  "bin": {
+    "local-node-lambda": "./bin/local-node-lambda"
+  }
+}

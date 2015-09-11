@@ -1,0 +1,36 @@
+#!/usr/bin/env node
+
+/*
+ * Local executor for Amazon Lambda function
+ */
+(function(){
+	var invoke = require('../lib/invoke.js');
+	var utils = require('../lib/utils.js');
+
+	// process opts
+	var program = require('commander');
+	program
+		.option('-p, --path [Lambda file name] Specify Lambda function file name. Default is "./index"')
+		.option('-e, --eventPath [Event data file name] Specify event data file name. Default is "{}"')
+		.option('-h, --handler [Lambda handler name] Lambda handler name. Default is "handler"')
+		.option('-t, --timeout [Timeout seconds] Seconds until the Lambda function times out. Default is 3 seconds.')
+		.parse(process.argv);
+
+	// load event & context
+	var eventObj = {};
+	if (program.eventPath) {
+		var eventAbsolutePath = utils.getAbsolutePath(program.eventPath);
+		eventObj = require(eventAbsolutePath);
+	}
+
+	invoke(eventObj, program.path, program.handler, program.timeout, function (err, message) {
+		if (err) {
+			console.log(err);
+			program.help();
+		} else {
+			console.log(message);
+		}
+		process.exit();
+	});
+})();
+
