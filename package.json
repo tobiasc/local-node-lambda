@@ -1,6 +1,6 @@
 {
   "name": "local-node-lambda",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Local-Node-Lambda lets you run Amazon Lambda functions locally. You can run them from the command line or integrate calls within a regular Node.js script, e.g. to use in unit testing or simply as part of a regular application.",
   "license": "MIT",
   "main": "index.js",
